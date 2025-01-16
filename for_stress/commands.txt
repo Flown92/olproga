@@ -1,0 +1,7 @@
+python3 checker.py for_stress/stupid main for_stress/gen.py 100
+
+clang-format -i main.cpp
+
+g++ -fsanitize=signed-integer-overflow -g -o main main.cpp
+
+
